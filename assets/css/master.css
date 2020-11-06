@@ -1,0 +1,22 @@
+/* BLOQUE DE BOTON DE PAGO MERCADOLIBRE */
+.block_marcadoPago{
+    border: 2px solid #2a9fd6; 
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+/* END BLOQUE DE BOTON DE PAGO MERCADOLIBRE */
+
+/* IMG METODO DE PAGO PAYPAL O MERCADOPAGO */
+.img_metodoPago{
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    border: 5px solid #2a9fd6; 
+}
+.img_metodoPago:hover {
+    border: 5px solid #1d6f96;
+}
+/* AND IMG METODO DE PAGO PAYPAL O MERCADOPAGO */
