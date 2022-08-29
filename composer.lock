@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "91db9266bd3970511ae778b4b147ea4a",
+    "content-hash": "98687d53becd65c2298a240f5ef46a8e",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -686,30 +686,29 @@
         },
         {
             "name": "mercadopago/dx-php",
-            "version": "2.1.1",
+            "version": "2.4.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mercadopago/dx-php.git",
-                "reference": "b17ca2d555512b6489067e3166bb4beaab206cff"
+                "url": "https://github.com/mercadopago/sdk-php.git",
+                "reference": "8389608ab859e5f9394910ec1bd74d603d7c17a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mercadopago/dx-php/zipball/b17ca2d555512b6489067e3166bb4beaab206cff",
-                "reference": "b17ca2d555512b6489067e3166bb4beaab206cff",
+                "url": "https://api.github.com/repos/mercadopago/sdk-php/zipball/8389608ab859e5f9394910ec1bd74d603d7c17a6",
+                "reference": "8389608ab859e5f9394910ec1bd74d603d7c17a6",
                 "shasum": ""
             },
             "require": {
                 "doctrine/annotations": "^1.8",
-                "doctrine/common": "^2.6",
+                "doctrine/common": "^2.6 || ^3.0",
                 "php": ">=7.1.0"
             },
             "require-dev": {
                 "doctrine/orm": "~2.3",
-                "phpdocumentor/phpdocumentor": "^2.0",
                 "phpmd/phpmd": "@stable",
-                "phpunit/phpunit": "^5",
+                "phpunit/phpunit": "^7",
                 "sebastian/phpcpd": "*",
-                "squizlabs/php_codesniffer": "2.3.*",
+                "squizlabs/php_codesniffer": "2.8.1",
                 "symfony/yaml": "~2.5",
                 "vlucas/phpdotenv": "^2.5"
             },
@@ -729,21 +728,12 @@
             "license": [
                 "MIT"
             ],
-            "authors": [
-                {
-                    "name": "imasson",
-                    "homepage": "https://github.com/imasson",
-                    "role": "Developer"
-                },
-                {
-                    "name": "joelibaceta",
-                    "homepage": "https://github.com/joelibaceta",
-                    "role": "Developer"
-                }
-            ],
             "description": "Mercado Pago PHP SDK",
-            "homepage": "https://github.com/mercadopago/dx-php",
-            "time": "2020-09-10T20:17:15+00:00"
+            "homepage": "https://github.com/mercadopago/sdk-php",
+            "support": {
+                "source": "https://github.com/mercadopago/sdk-php/tree/2.4.9"
+            },
+            "time": "2022-07-18T13:33:02+00:00"
         }
     ],
     "packages-dev": [],
@@ -753,5 +743,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }

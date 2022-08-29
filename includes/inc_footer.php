@@ -40,6 +40,10 @@ if ($_SESSION) {
 <script src="assets/js/main.js"></script>
 <script src="assets/js/style.js"></script>
 
+<!-- MercadoPago -->
+<script src="https://sdk.mercadopago.com/js/v2"></script>
+
+
 <!-- END PAYPAL JS -->
 <!-- PAYPAL USUARIOS DE PRUEBA
 (COMPRADOR)

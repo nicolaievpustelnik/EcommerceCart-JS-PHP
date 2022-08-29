@@ -1,5 +1,5 @@
 <?php
-// require_once 'includes/inc_header.php';
+require_once 'includes/inc_header.php';
 require_once 'includes/inc_navbar.php';
 require_once 'pagar.php';
 require_once 'mercadoPago.php';
@@ -74,13 +74,25 @@ require_once 'mercadoPago.php';
                                 <img src="<?php echo IMAGES;?>mercadoPago.png" alt="MercadoPago" width="200">
                             </div>
                             
-                            <form class="col-4 mt-4" action="http://localhost:8848/carrito/insertarPago.php" method="POST">
-                                <script
-                                    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-                                    data-preference-id="<?php echo $preference->id; ?>">
+                            <div class="col-4 mt-4">
+                                <div class="checkout-btn"></div>
+                                <script>
+                                const mp = new MercadoPago('TEST-24d68536-40c1-4c39-acaa-21254feb3a39', {
+                                    locale: 'es-AR'
+                                });
+
+                                mp.checkout({
+                                    preference: {
+                                    id: '<?php echo $preference->id; ?>'
+                                    },
+                                    render: {
+                                    container: '.cho-container',
+                                    label: 'Pagar',
+                                    }
+                                });
                                 </script>
-                            </form>
                             </div>
+
                             <!-- END MERCADOPAGO -->
                         </div>
                             

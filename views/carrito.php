@@ -54,7 +54,7 @@ require_once 'includes/inc_navbar.php';
                                 <img src="<?php echo IMAGES;?>mercadoPago.png" alt="MercadoPago" width="200">
                             </div>
                             
-                            <form class="col-4 mt-4" action="http://localhost:8848/carrito/insertarPago.php" method="POST">
+                            <form class="col-4 mt-4" action="http://localhost:<?=PORT?>/Carrito-Paypal-MercadoPago/insertarPago.php" method="POST">
                                 <script
                                     src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
                                     data-preference-id="<?php echo $preference->id; ?>">

@@ -23,6 +23,10 @@ require_once 'app/config.php';
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <!-- MercadoPago -->
+    <script src="https://sdk.mercadopago.com/js/v2"></script>
+
     <title><?= (isset($data['title']) ? $data['title'] : 'Carrito');?></title>
     
 </head>
