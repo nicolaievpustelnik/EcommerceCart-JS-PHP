@@ -75,21 +75,21 @@ require_once 'mercadoPago.php';
                             </div>
                             
                             <div class="col-4 mt-4">
-                                <div class="checkout-btn"></div>
+                                <div class="cho-container"></div>
                                 <script>
-                                const mp = new MercadoPago('TEST-24d68536-40c1-4c39-acaa-21254feb3a39', {
+                                    const mp = new MercadoPago('TEST-24d68536-40c1-4c39-acaa-21254feb3a39', {
                                     locale: 'es-AR'
-                                });
+                                    });
 
-                                mp.checkout({
+                                    mp.checkout({
                                     preference: {
-                                    id: '<?php echo $preference->id; ?>'
+                                        id: '<?php echo $preference->id; ?>'
                                     },
                                     render: {
-                                    container: '.cho-container',
-                                    label: 'Pagar',
+                                        container: '.cho-container',
+                                        label: 'Pagar',
                                     }
-                                });
+                                    });
                                 </script>
                             </div>
 

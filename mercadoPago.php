@@ -1,6 +1,6 @@
 <?php
 //SDK DE MARCADO PAGO
-/* require __DIR__ .  "/vendor/autoload.php";
+require __DIR__ .  "/vendor/autoload.php";
 
 //AGREGA CREDENCIALES DE MP.
 MercadoPago\SDK::setAccessToken("TEST-1507633793131148-092816-9c700b52278c72c6050e9cea38b154b2-347922076");
@@ -19,23 +19,6 @@ $item = new MercadoPago\Item();
 $item->title = "Mi producto carrito";
 $item->quantity = 1;
 $item->unit_price = $_SESSION['cart']['cart_totals']['total'];
-$datos[]=$item;  
-$preference->items = $datos;
-$preference->save();  */
-
-require "/vendor/autoload.php";
-
-MercadoPago\SDK::setAccessToken('');
-
-$preference = new MercadoPago\Preference();
-
-$item = new MercadoPago\Item();
-$item->title = "001";
-$item->title = "Mi producto carrito";
-$item->quantity = 1;
-$item->unit_price = 120;
-$item->currency_id = "AR";
-
 $datos[]=$item;  
 $preference->items = $datos;
 $preference->save();
