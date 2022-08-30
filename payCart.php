@@ -1,5 +1,5 @@
 <?php
-require_once 'includes/inc_header.php';
+require_once './includes/inc_header.php';
 
 // LLAMO A LA VISTA DE PAGO Y METODOS DE PAGO
 render_view('pago');

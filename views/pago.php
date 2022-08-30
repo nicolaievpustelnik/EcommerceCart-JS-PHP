@@ -1,7 +1,7 @@
 <?php
 require_once 'includes/inc_header.php';
 require_once 'includes/inc_navbar.php';
-require_once 'pagar.php';
+require_once 'payCart.php';
 require_once 'mercadoPago.php';
 ?>
    <!-- CONTENT -->
@@ -140,5 +140,6 @@ require_once 'mercadoPago.php';
       }).render('#paypal-button-container'); // Display payment options on your web page
     </script>
 <?php
-require_once 'includes/inc_footer.php';
+require_once './includes/inc_footer.php';
+require_once './includes/scripts/defauldScripts.php';
 ?>

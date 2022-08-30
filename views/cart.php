@@ -84,5 +84,6 @@ require_once 'includes/inc_navbar.php';
 <!-- END CONTENT -->
 
 <?php
-require_once 'includes/inc_footer.php';
+require_once './includes/inc_footer.php';
+require_once './includes/scripts/defauldScripts.php';
 ?>

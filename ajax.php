@@ -102,7 +102,7 @@ switch ($action) {
         <!-- END CART TOTALS -->
 
         <!-- PAY NOW BUTTON -->
-        <a href="pagar.php" class="btn btn-primary btn-lg btn-block '.$disabled.'">Pagar ahora</a>
+        <a href="payCart.php" class="btn btn-primary btn-lg btn-block '.$disabled.'">Pagar ahora</a>
         <!-- END PAY NOW BUTTON -->';
         json_output(200, 'OK', $output);
         break; 
