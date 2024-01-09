@@ -8,9 +8,9 @@ MercadoPago\SDK::setAccessToken("TEST-1507633793131148-092816-9c700b52278c72c605
 //CREA UN OBJETO DE PREFERENCIA
 $preference = new MercadoPago\Preference();
 $preference->back_urls = array(
-    "success" => "http://localhost:".PORT."/cart/insertarPago.php",
-    "failure" => "http://localhost:".PORT."/cart/errorPago.php?error=failure",
-    "pending" => "http://localhost:".PORT."/cart/errorPago.php?error=pending"
+    "success" => "http://localhost:".PORT."/EcommerceCart-JS-PHP/insertarPago.php",
+    "failure" => "http://localhost:".PORT."/EcommerceCart-JS-PHP/errorPago.php?error=failure",
+    "pending" => "http://localhost:".PORT."/EcommerceCart-JS-PHP/errorPago.php?error=pending"
 );
 $preference->auto_return = "approved";
 //CREA UN ITEM EN LA PREFERENCIA
