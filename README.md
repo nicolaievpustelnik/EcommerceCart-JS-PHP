@@ -13,4 +13,4 @@ Open project on a local server.
 
 1. You can add, delete and modify shopping cart products.
 
-2. you can simulate a purchase with mercadolibre or pypal 
+2. you can simulate a purchase with mercadolibre or paypal 
